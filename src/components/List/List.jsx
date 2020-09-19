@@ -1,16 +1,20 @@
 import React from 'react';
+import classNames from 'classnames';
+import { uniqueId } from 'lodash';
+
+import Badge from '../Badge/Badge';
 
 import './List.scss';
 
-const List = ({ items }) => (
-  <ul className="list">
+const List = ({ items, onClick }) => (
+  <ul onClick={onClick} className="list">
     {
-        items.map((item) => (
-          <li className={item.active ? 'active' : ''}>
-            <i>{item.icon ? item.icon : <i className={`badge badge--${item.color}`} />}</i>
-            <span>{item.name}</span>
-          </li>
-        ))
+      items.map((item) => (
+        <li key={uniqueId()} className={classNames(item.className, { active: item.active })}>
+          <i>{item.icon ? item.icon : <Badge color={item.color} />}</i>
+          <span>{item.name}</span>
+        </li>
+      ))
     }
   </ul>
 );
