@@ -12,6 +12,7 @@ body {
 }
 
 .todo {
+  display: flex;
   position:absolute;
   left: 50%;
   top: 50%;
@@ -29,6 +30,11 @@ body {
     border: 1px solid #f1f1f1;
     padding: 60px 20px;
   }
+
+  &__tasks {
+    flex: 1;
+    padding: 60px;
+  }
 }
 
 .button {
@@ -38,6 +44,7 @@ body {
   border: 0;
   padding: 10px 20px;
   cursor: pointer;
+  font-size: 14px;
 
   &:hover {
     background: darken(#4dd599, 6%);
@@ -45,6 +52,24 @@ body {
 
   &:active {
     background: darken(#4dd599, 10%);
+  }
+
+  &:disabled {
+    background: #d8d8d8;
+  }
+  &-grey {
+    background-color: #f4f6f8;
+    color: #444444;
+
+    &:hover {
+      background-color: darken(#f4f6f8, 3%);
+      color: #444444;
+    }
+
+    &:active {
+      background-color: darken(#f4f6f8, 6%);
+      color: #444444;
+    }
   }
 }
 
@@ -55,6 +80,7 @@ body {
   border-radius: 4px;
   padding: 8px 12px;
   width: 100%;
+  font-size: 14px;
 
   &:focus {
     border-color: #dbdbdb;
