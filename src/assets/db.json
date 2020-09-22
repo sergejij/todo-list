@@ -77,7 +77,7 @@
     {
       "listId": 1,
       "text": "qweqwe",
-      "completed": true,
+      "completed": false,
       "id": 8
     },
     {
@@ -100,7 +100,7 @@
     },
     {
       "listId": 2,
-      "text": "fasdf",
+      "text": "87654",
       "complated": false,
       "id": 13
     },
@@ -111,10 +111,10 @@
       "id": 14
     },
     {
-      "listId": 1,
-      "text": "2321",
+      "listId": 3,
+      "text": "Tenet",
       "complated": false,
-      "id": 15
+      "id": 16
     }
   ],
   "colors": [
