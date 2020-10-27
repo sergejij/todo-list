@@ -1,3 +1,9 @@
+### `npm i`
+### `npm i -g json-server`
+### `npm run fake-json`
+### `npm start`
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
